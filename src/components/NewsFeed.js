@@ -15,10 +15,10 @@ const NewsFeed = () => {
         };
           
         axios.request(options).then((response) => {
-          console.log(response.data);
-          setArticles(response.data);
+            console.log(response.data);
+            setArticles(response.data);
         }).catch((error) => {
-          console.error(error);
+            console.error(error);
         });
     }, []);
 

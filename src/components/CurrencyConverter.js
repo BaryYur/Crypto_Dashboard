@@ -37,8 +37,6 @@ const CurrencyConverter = () => {
         });
     };
 
-    console.log(result)
-
     return (
         <div className="currency-converter">
             <h2>Currency converter </h2>
