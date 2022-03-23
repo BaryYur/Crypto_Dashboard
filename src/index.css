@@ -19,19 +19,76 @@ code {
   outline: none;
 }
 
+a {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+input {
+  padding: 10px;
+  border: none;
+}
+
+select {
+  border: none;
+  padding: 9px;
+}
+
 .app {
   display: flex;
-  align-items: center;
+  width: 900px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+}
+
+tr {
+  margin-bottom: 15px;
+  display: block;
+}
+
+h2 {
+  margin-bottom: 15px;
 }
 
 .news-feed {
-  background-color: royalblue
+  background-color: rgba(204, 204, 231);
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 3px;
+}
+
+.news-feed p {
+  margin: 14px 0;
 }
 
 .currency-converter {
-  background-color: blue;
+  background-color: rgb(230, 223, 211);
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-align: center;
+  border-radius: 3px;
 }
 
 .exchange-rate {
-  background-color: aquamarine;
+  background-color: rgb(221, 230, 221);
+  border-radius: 3px;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.exchange-rate p:nth-child(2) {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 13px 0;
 }
