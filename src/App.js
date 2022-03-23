@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import NewsFeed from "./components/NewsFeed";
+import CurrencyConverter from "./components/CurrencyConverter";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="app">
+      <CurrencyConverter />
+      <NewsFeed />
     </div>
   );
 }
