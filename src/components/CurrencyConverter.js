@@ -51,7 +51,7 @@ const CurrencyConverter = () => {
                             <td>
                                 <input
                                     type="number"
-                                    name="currency-ampunt-1"
+                                    name="currency-amount-1"
                                     value={amount}
                                     onChange={e => setAmount(e.target.value)}
                                     min="0"
@@ -76,7 +76,7 @@ const CurrencyConverter = () => {
                             <td>
                                 <input
                                     type="number"
-                                    name="currency-ampunt-2"
+                                    name="currency-amount-2"
                                     value={result}
                                     disabled={true}
                                 />
