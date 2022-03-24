@@ -43,7 +43,8 @@ select {
 button {
   padding: 10px 15px;
   border: none;
-  margin-top: 20px;
+  margin-top: 10px;
+  align-self: flex-end;
   font-size: 18px;
   border-radius: 3px;
   background-color: white;
@@ -64,11 +65,20 @@ h2 {
   padding: 10px;
   margin: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border-radius: 3px;
+  border-radius: 3px; 
+  width: 450px
 }
 
 .news-feed p {
   margin: 14px 0;
+}
+
+.input-box {
+  display: block;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: rgb(217, 217, 233);
 }
 
 .currency-converter {
@@ -76,8 +86,24 @@ h2 {
   padding: 10px;
   margin: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  text-align: center;
   border-radius: 3px;
+  width: 450px
+}
+
+table {
+  margin: 0;
+}
+
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%
+}
+
+tr td:first-child {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .exchange-rate {

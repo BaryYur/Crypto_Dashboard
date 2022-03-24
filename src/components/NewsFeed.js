@@ -7,6 +7,7 @@ const NewsFeed = () => {
     useEffect(() => {
         const options = {
             method: 'GET',
+            // url: 'http://localhost:8000/news'
             url: 'https://crypto-news-live3.p.rapidapi.com/news',
             headers: {
               'X-RapidAPI-Host': 'crypto-news-live3.p.rapidapi.com',
