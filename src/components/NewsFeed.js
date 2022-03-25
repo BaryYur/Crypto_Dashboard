@@ -14,9 +14,9 @@ const NewsFeed = () => {
               'X-RapidAPI-Key': '8688f6993emsh19a697e12dc4ea7p1051a9jsnfe30076e9c91'
             }
         };
-          
+
         axios.request(options).then((response) => {
-            console.log(response.data);
+            // console.log(response.data);
             setArticles(response.data);
         }).catch((error) => {
             console.error(error);

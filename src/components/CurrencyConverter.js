@@ -13,8 +13,8 @@ const CurrencyConverter = () => {
     const [result, setResult] = useState(0);
 
     const [primaryCurrencyExchanged, setPrimaryCurrencyExchanged] = useState('BTC');
-    const [secondaryCurrencyExchanged, setSecondaryCurrencyExchanged] = useState('BTC'); 
- 
+    const [secondaryCurrencyExchanged, setSecondaryCurrencyExchanged] = useState('BTC');
+
     const convert = () => {
         const options = {
             method: 'GET',
@@ -25,9 +25,9 @@ const CurrencyConverter = () => {
               'X-RapidAPI-Key': '8688f6993emsh19a697e12dc4ea7p1051a9jsnfe30076e9c91'
             }
         };
-          
+
         axios.request(options).then((response) => {
-          console.log(response.data);
+          // console.log(response.data);
           setExchangeRate(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate']);
           setResult(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate'] * amount);
           setPrimaryCurrencyExchanged(chosenPrimaryCurrency); //important!
@@ -56,9 +56,9 @@ const CurrencyConverter = () => {
                                 />
                             </td>
                             <td>
-                                <select 
-                                    value={chosenPrimaryCurrency} 
-                                    name="currnecy-option-1" 
+                                <select
+                                    value={chosenPrimaryCurrency}
+                                    name="currnecy-option-1"
                                     className="currency-options"
                                     onChange={(e) => setChosenPrimaryCurrency(e.target.value)}
                                 >
@@ -80,9 +80,9 @@ const CurrencyConverter = () => {
                                 />
                             </td>
                             <td>
-                                <select 
-                                    value={chosenSecondaryCurrency} 
-                                    name="currnecy-option-2" 
+                                <select
+                                    value={chosenSecondaryCurrency}
+                                    name="currnecy-option-2"
                                     className="currency-options"
                                     onChange={(e) => setChosenSecondaryCurrency(e.target.value)}
                                 >
@@ -97,7 +97,7 @@ const CurrencyConverter = () => {
 
                 <button id="convert-button" onClick={convert}>Convert</button>
             </div>
-            
+
             <ExchangeRate
                 exchangeRate={exchangeRate}
                 chosenPrimaryCurrency={primaryCurrencyExchanged}

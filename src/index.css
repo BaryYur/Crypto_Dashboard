@@ -24,6 +24,11 @@ a {
   font-weight: 700;
 }
 
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
 input {
   padding: 10px;
   border: none;
@@ -65,7 +70,7 @@ h2 {
   padding: 10px;
   margin: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border-radius: 3px; 
+  border-radius: 3px;
   width: 450px
 }
 

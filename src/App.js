@@ -5,10 +5,13 @@ import CurrencyConverter from "./components/CurrencyConverter";
 
 function App() {
   return (
-    <div className="app">
-      <CurrencyConverter />
-      <NewsFeed />
-    </div>
+    <React.Fragment>
+        <h1>Crypoto Dashboard</h1>
+        <div className="app">
+            <CurrencyConverter />
+            <NewsFeed />
+        </div>
+    </React.Fragment>
   );
 }
 
